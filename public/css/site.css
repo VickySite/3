@@ -1,0 +1,120 @@
+body {
+  left: 0;
+  top: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, dodgerblue, #eac2ef, #eaeff1);
+    min-height: 900px;
+}
+.contactsMain3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+ .footer1 {
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 40%;
+  color: #fff;
+}
+
+
+  .playNav {
+    margin-bottom: 20px;
+    background-color: #cccccc;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      height: 100px;
+  }
+nav button {
+  background-color: transparent;
+  border: none;
+  margin: 1px auto;
+  width: 90px;
+  margin-left: -2%;
+      bottom: 0px;
+}
+
+   .homeA {
+      display: inline-block;
+      width: 90px;
+      color: white;
+      padding: 8px 16px;
+      margin: 0 8px;
+      border-radius: 5px;
+      text-decoration: none;
+      box-shadow:
+      5px 5px 6px #acacac,
+      -5px -5px 6px #fff;
+    }
+
+    .homeA {
+      position: relative;
+      display: block;
+      font-weight: 900;
+      /* font-size: 5rem; */
+      line-height: 1.5;
+      text-decoration: none;
+      color: transparent;
+      -webkit-text-stroke: 1px #6e1f1f;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    }
+    .homeA:hover {
+      color: #ffffff;
+      -webkit-text-stroke: 1px #212121;
+      transition: 0.25s;
+    }
+    .homeA:hover::before {
+      transform: translate(34px, -12px);
+      color: #ff1744;
+      -webkit-text-stroke: 1px #212121;
+    }
+    .homeA:hover::after {
+      transform: translate(44px, -24px);
+      color: #4dd0e1;
+      -webkit-text-stroke: 1px #212121;
+    }
+    .homeA::before, .homeA::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: 0.5s;
+      -webkit-text-stroke: 1px transparent;
+    }
+
+    a:hover {
+      color: rgb(94, 39, 177);
+      cursor: pointer;
+    }
+/*   
+    a:nth-child(1):hover {   
+    background-color: rgb(37, 104, 171);   
+  } */
+  a:nth-child(2):hover {   
+    background-color: rgb(155, 24, 122);  
+}
+a:nth-child(3):hover {   
+  background-color: rgb(197, 141, 45);  
+}
+
+  img {
+    height: 50px;
+  }
+
+  .number {
+    position: absolute;
+    right: 0;
+  }
+
+ 
+ 
+  
+
