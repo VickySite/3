@@ -12,10 +12,10 @@
 
 .squareContacts {
   display: block;
-  animation: zoomin 2s ease-in
 }
 .squareContacts .square3 {
   margin-top: 10%;
+  animation: zoomin 2s ease-in
 }
 
 .squareContacts, .squareContacts2 {
