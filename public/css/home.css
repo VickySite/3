@@ -22,7 +22,9 @@ input[type="radio"] {
   cursor: pointer;
   background-color: azure;
   border: none;
-  box-shadow: 5px 3px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow:
+  inset 5px 5px 6px #acacaca5,
+  inset -5px -5px 6px rgb(83, 47, 96);
   border-radius: 5px;
 }
 
