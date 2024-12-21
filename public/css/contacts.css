@@ -29,6 +29,7 @@
   font-weight: 900;
   color: #ffffff;
     -webkit-text-stroke: 1px #212121;
+    animation: fade-in 2s ease-in forwards;
 }
 
 .rotatingText-adjective {
@@ -142,7 +143,10 @@
     background-image: -webkit-linear-gradient(aqua, #deeca3, rgb(235, 129, 208));
     width: 250px;
     border-radius: 5px;
-    box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629);
+    /* box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629); */
+    box-shadow:
+    inset 5px 5px 6px #acacaca5,
+    inset -5px -5px 6px rgb(83, 47, 96);
     animation: zoomin 1s ease-in-out;
     margin-left: 15%;
   }
