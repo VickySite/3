@@ -28,6 +28,9 @@ body {
       justify-content: space-between;
       border-radius: 5px;
       height: 100px;
+      box-shadow:
+      inset 5px 5px 6px #acacac,
+      inset -5px -5px 6px rgb(83, 47, 96);
   }
 nav button {
   background-color: transparent;
@@ -47,8 +50,8 @@ nav button {
       border-radius: 5px;
       text-decoration: none;
       box-shadow:
-      5px 5px 6px #acacac,
-      -5px -5px 6px #fff;
+    inset 5px 5px 6px #acacaca5,
+    inset -5px -5px 6px rgb(83, 47, 96);
     }
 
     .homeA {
