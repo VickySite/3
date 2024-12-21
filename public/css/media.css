@@ -233,7 +233,6 @@ color: #4dd0e1;
       margin-top: -6.5%;
       margin-left: 55%;
     }
-   
     }
 
   
@@ -366,4 +365,52 @@ color: #4dd0e1;
           margin-left: 1%;
         }
  
+        }
+
+        @media screen and (max-height: 935px) {
+          body {
+            margin-bottom: 6%;
+          }
+   
+          }
+
+        @media screen and (min-height: 1000px) {
+          body {
+            margin-bottom: 16%;
+          }
+          .galleryHead span{
+            margin-left: 1%;
+          } 
+          .contactsMain2 {
+            margin-left: 30%;
+          }  
+          .contactsMain {
+            margin-left: 20%;
+          } 
+          #catches {
+            margin-left: 35%;
+          } 
+        }
+        @media screen and (min-height: 1170px) {
+          body {
+            margin-bottom: 40%;
+          }
+          .homeA {
+            margin-left: 55%;
+          }
+          .additionalText {
+            margin-left: -2%;
+            margin-top: 40%;
+          }
+          .squareContacts2 {
+            margin-top: 65%;
+            margin-left: 10%;
+          }
+          .textContent {
+            position: absolute;
+            margin-left: 0%; 
+          }
+          .squareContacts3 {
+            display: none;
+          }
         }
