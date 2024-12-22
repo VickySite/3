@@ -43,7 +43,7 @@
                     <div class="card__content">
                       <i class="card__icon fa-solid fa-gift"></i>
                       <div class="line"></div>
-                      <p class="card__text">250лв</p>
+                      <p class="card__text1">250лв</p>
                       <p class="card__text">Сега за 220лв!</p>
                       <button class="card__btn">
                         <a href="contacts.html" style="color: white">Поръчай</a>
@@ -56,7 +56,7 @@
                     <div class="card__content">
                       <i class="card__icon2 fa-solid fa-gift"></i>
                       <div class="line"></div>
-                      <p class="card__text">350лв</p>
+                      <p class="card__text1">350лв</p>
                       <p class="card__text">Сега за 320лв!</p>
                       <button class="card__btn2">
                         <a href="contacts.html" style="color: white">Поръчай</a>
@@ -69,7 +69,7 @@
                     <div class="card__content">
                       <i class="card__icon3 fa-solid fa-gift"></i>
                       <div class="line"></div>
-                      <p class="card__text">450лв</p>
+                      <p class="card__text1">450лв</p>
                       <p class="card__text">Сега за 420лв!</p>
                       <button class="card__btn3">
                         <a href="contacts.html" style="color: white">Поръчай</a>
@@ -88,7 +88,7 @@
                     <div class="card__content">
                       <i class="card__icon fa-solid fa-gift"></i>
                       <div class="line"></div>
-                      <p class="card__text">250лв</p>
+                      <p class="card__text1">250лв</p>
                       <p class="card__text">Сега за 220лв!</p>
                       <button class="card__btn">
                         <a href="contacts.html" style="color: white">Поръчай</a>
@@ -102,7 +102,7 @@
                     <div class="card__content">
                       <i class="card__icon2 fa-solid fa-gift"></i>
                       <div class="line"></div>
-                      <p class="card__text">350лв</p>
+                      <p class="card__text1">350лв</p>
                       <p class="card__text">Сега за 320лв!</p>
                       <button class="card__btn2">
                         <a href="contacts.html" style="color: white">Поръчай</a>
@@ -116,7 +116,7 @@
                     <div class="card__content">
                       <i class="card__icon3 fa-solid fa-gift"></i>
                       <div class="line"></div>
-                      <p class="card__text">450лв</p>
+                      <p class="card__text1">450лв</p>
                       <p class="card__text">Сега за 420лв!</p>
                       <button class="card__btn3">
                         <a href="contacts.html" style="color: white">Поръчай</a>
@@ -136,4 +136,29 @@
 
 </html>
 
-<script src="helper.js"></script>
+<script>
+  const slides2 = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+    
+    function showSlide(index) {
+      slides2.forEach((slide, i) => {
+        if (i === index) {
+          slide.style.opacity = 100;
+        } else {
+          slide.style.opacity = 0;
+        }
+      });
+    }
+    
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides2.length;
+      showSlide(currentSlide);
+    }
+    
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides2.length) % slides.length;
+      showSlide(currentSlide);
+    }
+    
+    showSlide(currentSlide);
+</script>
