@@ -44,9 +44,9 @@
 
   :root{
     --font: 'Poppins', sans-serif;
-    --color: #6f4bff;
+    --color: rgb(37, 104, 171);
     --color2: #ff4bcc;
-    --color3: #4bff5d;
+    --color3: aqua;
     --bg-color: #c5d9ff;
   }
   
@@ -100,13 +100,29 @@
     color: var(--color3);
   }
   
-  .card__text{
+  .card__text, .card__text1{
     font-size: 1.5rem;
     text-align: center;
     color: #777777;
     margin-top: -3em;
   }
-
+  .card__text{
+    animation: neon 4s ease infinite
+  }
+ .card__text1, .card__icon, .card__icon2, .card__icon3{
+  animation: fade-in 4s ease-in forwards;
+  }
+  .card__btn, .card__btn2, .card__btn3 {
+    animation: 2s ease-out 0s 1 slideInFromBottom;
+  }
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(300%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   .line {
     position: absolute;
     margin-top: -35%;
