@@ -141,11 +141,11 @@
     let currentSlide = 0;
     
     function showSlide(index) {
-      slides2.forEach((slide, i) => {
+      slides2.forEach((x, i) => {
         if (i === index) {
-          slide.style.opacity = 100;
+          x.style.opacity = 100;
         } else {
-          slide.style.opacity = 0;
+          x.style.opacity = 0;
         }
       });
     }
@@ -156,7 +156,7 @@
     }
     
     function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides2.length) % slides.length;
+      currentSlide = (currentSlide - 1 + slides2.length) % slides2.length;
       showSlide(currentSlide);
     }
     
