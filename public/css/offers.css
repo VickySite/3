@@ -112,8 +112,14 @@
  .card__text1, .card__icon, .card__icon2, .card__icon3{
   animation: fade-in 4s ease-in forwards;
   }
-  .card__btn, .card__btn2, .card__btn3 {
+  .card__btn {
     animation: 2s ease-out 0s 1 slideInFromBottom;
+  }
+  .card__btn2 {
+    animation: 4s ease-out 0s 1 slideInFromBottom;
+  }
+  .card__btn3 {
+    animation: 6s ease-out 0s 1 slideInFromBottom;
   }
   @keyframes slideInFromBottom {
     0% {
@@ -131,7 +137,9 @@
     background-color: transparent;
     border-bottom: 5px solid rgba(60, 60, 60, 0.627);
   }
-  
+  .card__btn a, .card__btn2 a, .card__btn3 a{
+    text-decoration: none;
+  }
   .card__btn, .card__btn2, .card__btn3{
     color: #fff;
     font-size: 1rem;
@@ -164,6 +172,23 @@
     align-items: center;
     justify-content: center; 
     overflow: hidden;
+  }
+  .card__ribbon {
+    animation: 2s ease-out 0s 1 slideInFromTop;
+  }
+  .card__ribbon2 {
+    animation: 4s ease-out 0s 1 slideInFromTop;
+  }
+  .card__ribbon3 {
+    animation: 6s ease-out 0s 1 slideInFromTop;
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .card__ribbon::after {
