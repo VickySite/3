@@ -1,248 +1,234 @@
 .cardwrapper {
     display: none;
 }
-.slider {
-    position: relative;
-      /* width: 500px; */
-      height: 500px;
-      margin: auto;
-    }
-  
-    
-  .slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    flex: 0 0 100%;
-    transition: transform 1s ease;
-  }
+.slider-wrapper{
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
 
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    background-image: linear-gradient(to top, dodgerblue, #eac2ef);
-    border-radius: 10px;
-    color: #fff;
-    padding: 10px 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-decoration: none;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.815); 
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
 
-  :root{
-    --font: 'Poppins', sans-serif;
-    --color: rgb(37, 104, 171);
-    --color2: #ff4bcc;
-    --color3: aqua;
-    --bg-color: #c5d9ff;
-  }
-  
+.slider-wrapper .swiper-pagination-bullet{
+  background: #fff;
+  height: 15px;
+  width: 15px;
+}
 
-  .card, .card2, .card3{
-    background-color: #fff;
-    width: 20em;
-    height: 30em;
-    border-radius: 1em;
-    /* box-shadow: 0 1em 1em rgba(0,0,0, .15); */
-   margin-left: 5%;
-    position: relative;
-  }
-  .card {
-    box-shadow:
-    inset 5px 5px 6px #acacaca5,
-    inset -5px -5px 6px #463d6a;
-  }
-  .card2 {
-    box-shadow:
-    inset 5px 5px 6px #acacaca5,
-    inset -5px -5px 6px #7b4066;
-  }
-  .card3 {
-    box-shadow:
-    inset 5px 5px 6px #acacaca5,
-    inset -5px -5px 6px #366153;
-  }
-  
-  .card__content{
-    height: 100%;
-    padding: 3em;
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .card__icon, .card__icon2, .card__icon3{
-    font-size: 6rem;
-    margin-top: .1em;
-  }
-  .card__icon {
-    color: var(--color);
-  }
-  .card__icon2{
-    color: var(--color2);
-  }
-  .card__icon3{
-    color: var(--color3);
-  }
-  
-  .card__text, .card__text1{
-    font-size: 1.5rem;
-    text-align: center;
-    color: #777777;
-    margin-top: -3em;
-  }
-  .card__text{
-    animation: neon 4s ease infinite
-  }
- .card__text1, .card__icon, .card__icon2, .card__icon3{
-  animation: fade-in 4s ease-in forwards;
-  }
-  .card__btn {
-    animation: 2s ease-out 0s 1 slideInFromBottom;
-  }
-  .card__btn2 {
-    animation: 4s ease-out 0s 1 slideInFromBottom;
-  }
-  .card__btn3 {
-    animation: 6s ease-out 0s 1 slideInFromBottom;
-  }
-  @keyframes slideInFromBottom {
-    0% {
-      transform: translateY(300%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  .line {
-    position: absolute;
-    margin-top: -35%;
-    height: 5px;
-    width: 100px;
-    background-color: transparent;
-    border-bottom: 5px solid rgba(60, 60, 60, 0.627);
-  }
-  .card__btn a, .card__btn2 a, .card__btn3 a{
-    text-decoration: none;
-  }
-  .card__btn, .card__btn2, .card__btn3{
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    width: 10em;
-    height: 3em;
-    border: none;
-    border-radius: 2em;
-    box-shadow: 0 .5em 1em rgba(0,0,0, .2);
-    cursor: pointer;
-  }
-  .card__btn{
-    background-color: var(--color);
-  }
-  .card__btn2{
-    background-color: var(--color2);
-  }
-  .card__btn3{
-    background-color: var(--color3);
-  }
-  .card__ribbon, .card__ribbon2, .card__ribbon3{
-    width: 12em;
-    height: 12em;
-    position: absolute;
-    top: -1em;
-    left: -1em;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    overflow: hidden;
-  }
-  .card__ribbon {
-    animation: 2s ease-out 0s 1 slideInFromTop;
-  }
-  .card__ribbon2 {
-    animation: 4s ease-out 0s 1 slideInFromTop;
-  }
-  .card__ribbon3 {
-    animation: 6s ease-out 0s 1 slideInFromTop;
-  }
-  @keyframes slideInFromTop {
-    0% {
-      transform: translateY(-200%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+.slider-wrapper .swiper-slider-button{
+  color: #fff;
+  margin-top: -22px;
+  transition: 0.2s ease;
 
-  .card__ribbon::after {
-    content: 'Малък сайт';
-    background-color: var(--color);
-  }
-  .card__ribbon2::after {
-    content: 'Стандартен сайт';
-    background-color: var(--color2);
-  }
-  .card__ribbon3::after {
-    content: 'Сайт екстра плюс';
-    background-color: var(--color3);
-  }
-  
-  .card__ribbon::after, .card__ribbon2::after, .card__ribbon3::after{  
-    position: absolute;
-    width: 150%;
-    height: 3.5em;
-    transform: rotate(-45deg) translateY(-1.7em);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: .1em;
-    box-shadow: 0 .3em .6em rgba(0,0,0, .2);
-  }
+}
 
-  .card__ribbon::before {
-    background-color: #5a3ecc;
-    box-shadow: 11em -11em #5a3ecc;
-  }
-  .card__ribbon2::before {
-    background-color: #cc3e9a;
-    box-shadow: 11em -11em #cc3e9a;
-  }
-  .card__ribbon3::before {
-    background-color: #3ecc9d;
-    box-shadow: 11em -11em #3ecc9d;
-  }
-  
-  .card__ribbon::before, .card__ribbon2::before, .card__ribbon3::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 1em;
-    height: 1em;  
-  }
 
-  .footer4 {
-    color: white;
-    margin: 2%;
-    margin-left: 35%;
+.slider-wrapper .swiper-slider-button:hover{
+  color: #4658ff;
+}
+
+
+:root{
+  --font: 'Poppins', sans-serif;
+  --color: rgb(37, 104, 171);
+  --color2: #ff4bcc;
+  --color3: aqua;
+  --bg-color: #c5d9ff;
+}
+
+
+.card, .card2, .card3{
+  background-color: #fff;
+  /* !!!!! */
+  width: 12em;
+  height: 28em;
+  border-radius: 1em;
+  /* box-shadow: 0 1em 1em rgba(0,0,0, .15); */
+ margin-left: 5%;
+  position: relative;
+}
+.card {
+  box-shadow:
+  inset 5px 5px 6px #acacaca5,
+  inset -5px -5px 6px #463d6a;
+}
+.card2 {
+  box-shadow:
+  inset 5px 5px 6px #acacaca5,
+  inset -5px -5px 6px #7b4066;
+}
+.card3 {
+  box-shadow:
+  inset 5px 5px 6px #acacaca5,
+  inset -5px -5px 6px #366153;
+}
+
+.card__content{
+  height: 100%;
+  padding: 3em;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card__icon, .card__icon2, .card__icon3{
+  font-size: 6rem;
+  margin-top: .1em;
+}
+.card__icon {
+  color: var(--color);
+}
+.card__icon2{
+  color: var(--color2);
+}
+.card__icon3{
+  color: var(--color3);
+}
+
+.card__text, .card__text1{
+  font-size: 1.5rem;
+  text-align: center;
+  color: #777777;
+  margin-top: -3em;
+}
+.card__text{
+  animation: neon 4s ease infinite
+}
+.card__text1, .card__icon, .card__icon2, .card__icon3{
+animation: fade-in 2s ease-in forwards;
+}
+.card__btn {
+  animation: 2s ease-out 0s 1 slideInFromBottom;
+}
+.card__btn2 {
+  animation: 4s ease-out 0s 1 slideInFromBottom;
+}
+.card__btn3 {
+  animation: 6s ease-out 0s 1 slideInFromBottom;
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(300%);
   }
+  100% {
+    transform: translateY(0);
+  }
+}
+.line {
+  position: absolute;
+  margin-top: -65%;
+  height: 5px;
+  width: 100px;
+  background-color: transparent;
+  border-bottom: 5px solid rgba(60, 60, 60, 0.627);
+}
+.card__btn a, .card__btn2 a, .card__btn3 a{
+  text-decoration: none;
+}
+.card__btn, .card__btn2, .card__btn3{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 .5em 1em rgba(0,0,0, .2);
+  cursor: pointer;
+}
+.card__btn{
+  background-color: var(--color);
+}
+.card__btn2{
+  background-color: var(--color2);
+}
+.card__btn3{
+  background-color: var(--color3);
+}
+.card__ribbon, .card__ribbon2, .card__ribbon3{
+  width: 12em;
+  height: 12em;
+  position: absolute;
+  top: -1em;
+  left: -1em;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+}
+.card__ribbon {
+  animation: 2s ease-out 0s 1 slideInFromTop;
+}
+.card__ribbon2 {
+  animation: 4s ease-out 0s 1 slideInFromTop;
+}
+.card__ribbon3 {
+  animation: 6s ease-out 0s 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card__ribbon::after {
+  content: 'Малък сайт';
+  background-color: var(--color);
+}
+.card__ribbon2::after {
+  content: 'Стандартен сайт';
+  background-color: var(--color2);
+}
+.card__ribbon3::after {
+  content: 'Сайт екстра плюс';
+  background-color: var(--color3);
+}
+
+.card__ribbon::after, .card__ribbon2::after, .card__ribbon3::after{  
+  position: absolute;
+  width: 140%;
+  height: 3.5em;
+  transform: rotate(-45deg) translateY(-1.7em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  box-shadow: 0 .3em .6em rgba(0,0,0, .2);
+}
+
+.card__ribbon::before {
+  background-color: #5a3ecc;
+  box-shadow: 11em -11em #5a3ecc;
+}
+.card__ribbon2::before {
+  background-color: #cc3e9a;
+  box-shadow: 11em -11em #cc3e9a;
+}
+.card__ribbon3::before {
+  background-color: #3ecc9d;
+  box-shadow: 11em -11em #3ecc9d;
+}
+
+.card__ribbon::before, .card__ribbon2::before, .card__ribbon3::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1em;
+  height: 1em;  
+}
+
+.footer4 {
+  color: white;
+  margin: 2%;
+  margin-left: 35%;
+}
