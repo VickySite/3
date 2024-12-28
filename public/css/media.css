@@ -544,3 +544,32 @@ color: #4dd0e1;
           }
       
         }
+        @media screen and (width: 820px) {
+          .textContent {
+            margin-left: 10%;
+          }
+          .squareContacts {
+            margin-top: 40%;
+          }
+        }
+        @media screen and (width: 1024px), (width: 912px) {
+          body {
+            margin-bottom: 47%;
+          }
+          .additionalText2 p, .additionalText3 p, .additionalText p, .trainer, 
+          .squareFirst, .squareSecond {
+            display: none;
+          }
+          .galeryTexts {
+            position: absolute;
+            margin-top: 60%;
+          }
+          .footer2 {
+            margin-top: 70%;
+            margin-left: 40%;
+          }
+          .footer4 {
+            margin-top: 20%;
+          }
+        } 
+       
