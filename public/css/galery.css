@@ -9,11 +9,24 @@
   align-items: center; */
  }
 
+ .contactsMain5 {
+  position: relative;
+  margin: auto;
+  min-width: 85%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
  .contactsMain2 div {
  margin-left: -6%;
   margin-bottom: 6%;
  }
- .squareFirst, .galeryTexts, .squareSecond {
+ .contactsMain5 div {
+  margin-left: 2%;
+ }
+ .squareFirst, .galeryTexts, .galeryTexts2, .squareSecond {
   animation: zoomin 1s ease-in-out;
  }
 
@@ -72,6 +85,9 @@
 .galleryHead span{
   margin-left: 35%;
 }
+.galleryHead h4 {
+  color: white;
+}
 .innerImg {
   z-index: 0;
   width: 300px;
@@ -93,6 +109,8 @@
   margin-left: 40%;
   color: #fff;
 }
- 
+ h5 {
+  color: #fff;
+ }
 
 
