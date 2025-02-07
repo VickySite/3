@@ -3,7 +3,7 @@
   border-radius: 5px;
   margin-top: -5%;
   margin-left: 30%;
-  animation:pl1 1s infinite;
+  animation: pl1 1s infinite;
 }
   
 @keyframes pl1 {
