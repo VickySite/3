@@ -282,8 +282,7 @@ label {
 
 .share {
   position: absolute;
-  margin-top: 118%;
-  margin-left: 40%;
+  margin-left: 30%;
   border: none;
   border-radius: 5px;
   background-color: #5d47a3;
@@ -292,7 +291,6 @@ label {
 .share a{
  color: white;
 }
-
 
 
 
