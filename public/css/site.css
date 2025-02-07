@@ -12,10 +12,39 @@ body {
   align-items: center;
  }
 
+ .galeryTexts2 {
+  margin-left: 40%;
+  width: 250px;
+  }
+
+  .text4 {
+    background-image: -webkit-linear-gradient(aqua, #deeca3, rgb(235, 129, 208));
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    /* box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629); */
+    box-shadow:
+    inset 5px 5px 6px #acacaca5,
+    inset -5px -5px 6px rgb(83, 47, 96);
+    animation: zoomin 1s ease-in-out;
+    margin-left: 15%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .text4 h4 {
+    color: white;
+    margin-left: 30%;
+  }
+  .text4 a {
+    text-decoration: none;
+  }
 
  .footer1 {
   position: absolute;
-  margin-top: 450px;
+  margin-top: 480px;
   margin-left: 40%;
   color: #fff;
 }
@@ -37,17 +66,17 @@ nav button {
   border: none;
   margin: 1px auto;
   width: 90px;
-  margin-left: -2%;
+  margin-left: -4%;
       bottom: 0px;
 }
 
    .homeA {
       display: inline-block;
-     width: 80px;
+      width: 80px;
       height: 30px;
       align-content: center;
       color: white;
-/*       padding: 8px 16px; */
+      /* padding: 8px 16px; */
       margin: 0 8px;
       border-radius: 5px;
       text-decoration: none;
@@ -60,7 +89,7 @@ nav button {
       position: relative;
       display: block;
       font-weight: 900;
-     font-size: 0.8rem;
+      font-size: 0.8rem;
       line-height: 1.5;
       text-decoration: none;
       color: transparent;
