@@ -280,6 +280,19 @@ label {
   transform: translate3d(0%, -30%, 100px);
 }
 
+.share {
+  position: absolute;
+  margin-top: 118%;
+  margin-left: 40%;
+  border: none;
+  border-radius: 5px;
+  background-color: #5d47a3;
+}
+
+.share a{
+ color: white;
+}
+
 
 
 
