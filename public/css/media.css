@@ -1,4 +1,7 @@
  @media screen and (min-width: 900px) {
+  .share {
+    margin-left: 8.5%;
+  }
   .homeA {
     margin-left: 150px;
     width: 125px;
@@ -234,6 +237,10 @@ color: #4dd0e1;
       margin-top: -6.5%;
       margin-left: 55%;
     }
+    .squareContacts4 {
+      display: block;
+      width: 500px;
+    }
     }
 
   
@@ -308,8 +315,12 @@ color: #4dd0e1;
         box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.884);
       }
       .galeryTexts {
-        margin-top: -8%;
       width: 650px;
+      animation: zoomin 1s ease-in-out;
+      }
+
+      .galeryTexts2 {
+      width: 450px;
       animation: zoomin 1s ease-in-out;
       }
      
@@ -572,4 +583,35 @@ color: #4dd0e1;
             margin-top: 20%;
           }
         } 
+        @media screen and (width: 768px) {
+          .share{
+            margin-left: 4%;
+          }
+        }
+        @media screen and (width: 820px) {
+          .share{
+            margin-left: 4%;
+          }
+        }
+        @media screen and (width: 1024px) {
+          .share{
+            margin-left: 22%;
+          }
+        }
+        @media screen and (width: 1024px) {
+          .share{
+            margin-left: 22%;
+          }
+        }
+        @media screen and (width: 1024px) {
+          .share{
+            margin-left: 22%;
+          }
+        }
+        @media screen and (width: 1280px) {
+          .share{
+            margin-left: 7%;
+          }
+        }
+       
        
