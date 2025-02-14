@@ -32,11 +32,12 @@
   --color: rgb(37, 104, 171);
   --color2: #ff4bcc;
   --color3: aqua;
+  --color4: #eba4d7;
   --bg-color: #c5d9ff;
 }
 
 
-.card, .card2, .card3{
+.card, .card2, .card3, .card4{
   background-color: #fff;
   /* !!!!! */
   width: 12em;
@@ -56,7 +57,7 @@
   inset 5px 5px 6px #acacaca5,
   inset -5px -5px 6px #7b4066;
 }
-.card3 {
+.card3, .card4 {
   box-shadow:
   inset 5px 5px 6px #acacaca5,
   inset -5px -5px 6px #366153;
@@ -72,7 +73,7 @@
   justify-content: space-around;
 }
 
-.card__icon, .card__icon2, .card__icon3{
+.card__icon, .card__icon2, .card__icon3, .card__icon4 {
   font-size: 6rem;
   margin-top: .1em;
 }
@@ -85,6 +86,9 @@
 .card__icon3{
   color: var(--color3);
 }
+.card__icon4{
+  color: var(--color4);
+}
 
 .card__text, .card__text1{
   font-size: 1.5rem;
@@ -95,17 +99,20 @@
 .card__text{
   animation: neon 4s ease infinite
 }
-.card__text1, .card__icon, .card__icon2, .card__icon3{
+.card__text1, .card__icon, .card__icon2, .card__icon3, .card__icon4{
 animation: fade-in 2s ease-in forwards;
 }
 .card__btn {
   animation: 2s ease-out 0s 1 slideInFromBottom;
 }
 .card__btn2 {
-  animation: 4s ease-out 0s 1 slideInFromBottom;
+  animation: 6s ease-out 0s 1 slideInFromBottom;
 }
 .card__btn3 {
-  animation: 6s ease-out 0s 1 slideInFromBottom;
+  animation: 8s ease-out 0s 1 slideInFromBottom;
+}
+.card__btn4 {
+  animation: 4s ease-out 0s 1 slideInFromBottom;
 }
 @keyframes slideInFromBottom {
   0% {
@@ -123,10 +130,10 @@ animation: fade-in 2s ease-in forwards;
   background-color: transparent;
   border-bottom: 5px solid rgba(60, 60, 60, 0.627);
 }
-.card__btn a, .card__btn2 a, .card__btn3 a{
+.card__btn a, .card__btn2 a, .card__btn3 a, .card__btn4 a{
   text-decoration: none;
 }
-.card__btn, .card__btn2, .card__btn3{
+.card__btn, .card__btn2, .card__btn3, .card__btn4{
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -148,7 +155,10 @@ animation: fade-in 2s ease-in forwards;
 .card__btn3{
   background-color: var(--color3);
 }
-.card__ribbon, .card__ribbon2, .card__ribbon3{
+.card__btn4{
+  background-color: var(--color4);
+}
+.card__ribbon, .card__ribbon2, .card__ribbon3, .card__ribbon4 {
   width: 12em;
   height: 12em;
   position: absolute;
@@ -163,10 +173,13 @@ animation: fade-in 2s ease-in forwards;
   animation: 2s ease-out 0s 1 slideInFromTop;
 }
 .card__ribbon2 {
-  animation: 4s ease-out 0s 1 slideInFromTop;
+  animation: 6s ease-out 0s 1 slideInFromTop;
 }
 .card__ribbon3 {
-  animation: 6s ease-out 0s 1 slideInFromTop;
+  animation: 8s ease-out 0s 1 slideInFromTop;
+}
+.card__ribbon4 {
+  animation: 4s ease-out 0s 1 slideInFromTop;
 }
 @keyframes slideInFromTop {
   0% {
@@ -189,8 +202,12 @@ animation: fade-in 2s ease-in forwards;
   content: 'Сайт екстра плюс';
   background-color: var(--color3);
 }
+.card__ribbon4::after {
+  content: 'Безплатен сайт';
+  background-color: var(--color4);
+}
 
-.card__ribbon::after, .card__ribbon2::after, .card__ribbon3::after{  
+.card__ribbon::after, .card__ribbon2::after, .card__ribbon3::after, .card__ribbon4::after{  
   position: absolute;
   width: 140%;
   height: 3.5em;
@@ -217,8 +234,12 @@ animation: fade-in 2s ease-in forwards;
   background-color: #3ecc9d;
   box-shadow: 11em -11em #3ecc9d;
 }
+.card__ribbon4::before {
+  background-color: #db7de4;
+  box-shadow: 11em -11em #db7de4;
+}
 
-.card__ribbon::before, .card__ribbon2::before, .card__ribbon3::before{
+.card__ribbon::before, .card__ribbon2::before, .card__ribbon3::before, .card__ribbon4::before{
   content: '';
   position: absolute;
   left: 0;
