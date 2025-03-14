@@ -152,7 +152,7 @@ label {
   margin-left: 14%;
 }
 
-@keyframes neon {
+/* @keyframes neon {
   0%,
   100% {
       text-shadow: 0 0 10px #554a55a8, 0 0 20px #ef00e3a8, 0 0 20px #7a0777a8, 0 0 20px #d885d4a8, 0 0 2px #fed128, 2px 2px 2px #806914;
@@ -160,6 +160,18 @@ label {
   }
   50% {
       text-shadow: 0 0 2px #891715, 0 0 5px #da4e4a, 0 0 5px #800e0b, 0 0 5px #3209fb, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+      color: #eda0d3;
+  }
+} */
+
+@keyframes neon {
+  0%,
+  100% {
+      text-shadow: 0 0 10px #554a55a8, 0 0 20px #ef00e3a8, 0 0 20px #7a0777a8, 0 0 20px #d885d4a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+  
+  }
+  50% {
+      text-shadow: 0 0 2px #891715, 0 0 5px #da4e4a, 0 0 5px #3209fb, 0 0 2px #800e0b, 4px 4px 2px #40340a;
       color: #eda0d3;
   }
 }
@@ -291,12 +303,10 @@ label {
 .share a{
  color: white;
 }
+
 svg {
   margin-top: 5%;
 }
-
-
-
 
 
 
