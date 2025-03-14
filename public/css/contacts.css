@@ -58,6 +58,8 @@
     margin-bottom: 10px;
     font-size: 30px;
     max-height: 35px;
+      /* !!! */
+    z-index: 1;
   }
 
 
