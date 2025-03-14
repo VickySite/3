@@ -1,4 +1,13 @@
  @media screen and (min-width: 900px) {
+   /* !!! */
+  fieldset div {
+    margin-left: 5%;
+  }
+  .newhomeImg {
+    width: 270px;
+    height: 100px;
+  }
+  /* !!! */
   .share {
     margin-left: 5.5%;
   }
