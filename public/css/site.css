@@ -152,7 +152,11 @@ a:nth-child(3):hover {
     animation: pl1 1s infinite
   }
 
- 
+  /* !!! */
+  .newhomeImg {
+    width: 150px;
+    height: 70px;
+  }
  
   
 
