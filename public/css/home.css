@@ -136,12 +136,12 @@ label {
   width: 120px;
   height: 250px;
   font-size: 17px;
-  margin-top: -170%;
+  margin-top: -190%;
   /* z-index: 1; */
   animation: neon 4s ease infinite
 }
 .firstSpan {
-  margin-top: -190%;
+  margin-top: -210%;
   margin-left: 14%;
 }
 .secondSpan {
