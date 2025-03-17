@@ -29,13 +29,16 @@ input[type="radio"] {
 }
 
 #catches fieldset:nth-child(1) {
- background-color: aqua;
+ /* background-color: aqua; */
+ background-color: rgb(91, 98, 239);
 }
 #catches fieldset:nth-child(2){
-    background-color: rgb(235, 129, 208);
+    /* background-color: rgb(235, 129, 208); */
+    background-color: rgb(155, 24, 122);
    }
    #catches fieldset:nth-child(3){
-    background-color: rgb(235, 222, 103);
+    /* background-color: rgb(235, 222, 103); */
+    background-color: rgb(197, 141, 45);
    }
 
    #item-0:checked ~ #catches fieldset:nth-child(3),
@@ -77,13 +80,16 @@ input[type="radio"] {
   }
 
   #catches fieldset:nth-child(2):hover{
-    background-color: rgb(155, 24, 122);
+    /* background-color: rgb(155, 24, 122); */
+    background-color: rgb(235, 129, 208); 
 }
 #catches fieldset:nth-child(1):hover{
-  background-color: rgb(37, 104, 171);
+  /* background-color: rgb(37, 104, 171); */
+  background-color: aqua;
 }
 #catches fieldset:nth-child(3):hover{
-  background-color: rgb(197, 141, 45);
+  /* background-color: rgb(197, 141, 45); */
+  background-color: rgb(235, 222, 103);
 }
 
 label {
