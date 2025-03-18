@@ -9,9 +9,10 @@
   }
   /* !!! */
   .share {
+    margin-top: 1%;
     margin-left: 5.5%;
   }
-   #catches {
+  #catches {
     filter: blur(0px);
   }
   .trainer3 {
@@ -260,7 +261,7 @@ color: #4dd0e1;
       display: block;
       width: 500px;
     }
-   .trainer2 {
+    .trainer2 {
       display: none;
     }
     }
@@ -432,8 +433,15 @@ color: #4dd0e1;
         .card, .card2, .card3 {
           margin-top: 12%;
         }
+        /* .trainer2 {
+          margin-top: 10%;
+          margin-left: -25%;
+        } */
       }
       @media screen and (width: 912px) {
+        body {
+          margin-bottom: 30%;
+        }
         .cardwrapper {
           width: 400px;
           margin-left: 25%;
@@ -468,6 +476,9 @@ color: #4dd0e1;
      .share {
       margin-left: 20%;
      }
+     .trainer2 {
+      margin-left: 40%;
+    }
       }
 
       @media screen and (max-width: 360px) {
@@ -542,6 +553,9 @@ color: #4dd0e1;
           .card, .card2, .card3, .card4{
             width: 22em;
           }
+          .trainer2 {
+            margin-top: 20%;
+          }
         }
         @media screen and (min-width: 768px) {
           .card, .card2, .card3, .card4{
@@ -553,6 +567,9 @@ color: #4dd0e1;
           
           .next {
             margin-right: 25%;
+          }
+          .trainer2 {
+            margin-left: 30%;
           }
         }
         @media screen and (min-width: 390px) {
@@ -588,6 +605,14 @@ color: #4dd0e1;
             margin-top: 40%;
           }
         }
+        /* @media screen and (width: 853px) {
+          #catches {
+            filter: blur(0px)
+          }
+          .trainer2 {
+            margin-top: 40%;
+          }
+        } */
         @media screen and (width: 1024px), (width: 912px) {
           body {
             margin-bottom: 47%;
@@ -607,15 +632,29 @@ color: #4dd0e1;
           .footer4 {
             margin-top: 20%;
           }
+          .trainer2 {
+            display: block;
+            margin-top: 70%;
+            margin-left: 40%;
+          }
+          .close {
+            display: none;
+          }
         } 
         @media screen and (width: 768px) {
           .share{
             margin-left: 14%;
           }
+          .trainer2 {
+            margin-left: 60%;
+          }
         }
         @media screen and (width: 820px) {
           .share{
             margin-left: 14%;
+          }
+          .trainer2 {
+            margin-left: 40%;
           }
         }
         @media screen and (width: 1024px) {
@@ -637,6 +676,10 @@ color: #4dd0e1;
           }
         }
         @media screen and (width: 414px) {
+          .trainer2 {
+            margin-top: 10%;
+            margin-left: 5%;
+          }
           .footer3{
             margin-left: 40%;
           }
