@@ -11,6 +11,7 @@ input[type="radio"] {
     position: absolute;
     margin-left: 25%;
     /* margin-top: 10%; */
+    filter: blur(4px); 
   }
 
 #catches fieldset {
@@ -359,8 +360,7 @@ svg {
     transform: translateY(-50px) scale(1.2);
   }
 
-  .place {
-    margin-left: -70%;
+  .place, .place2 {
     width: 350px;
     font-weight: 900;
       font-size: 1rem;
@@ -368,5 +368,31 @@ svg {
     color: #ffffff;
       -webkit-text-stroke: 1px #212121;
   }
+
+  .place {
+    margin-left: -70%;
+  }
+
+  .trainer2 {
+    display: block;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 20%;
+    height: 200px;
+  }
+  .close {
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 30%;
+    font-weight: 900;
+      font-size: 1rem;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #212121;
+    border-radius: 5px;
+    box-shadow:
+    inset 5px 5px 6px #acacaca5,
+    inset -5px -5px 6px rgb(83, 47, 96);
+  }
+
 
 
