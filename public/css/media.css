@@ -11,6 +11,9 @@
   .share {
     margin-left: 5.5%;
   }
+   #catches {
+    filter: blur(0px);
+  }
   .trainer3 {
     margin-top: 3%;
     margin-left: 40%;
