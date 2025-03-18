@@ -145,7 +145,10 @@ label {
   font-size: 17px;
   margin-top: -190%;
   /* z-index: 1; */
-  animation: neon 4s ease infinite
+  /* animation: neon 4s ease infinite */
+  text-shadow:
+  1px 1px 2px black, 0 0 1em blue,0 0 0.2em blue;
+  color: #f5cfe8;
 }
 .firstSpan {
   margin-top: -210%;
