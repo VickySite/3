@@ -129,9 +129,28 @@
          
       </div>
       <span class="place">Място за вашата реклама</span> 
-        
+      
     </div>
-                  
+   
+ </div>
+    
+
+ <div class="trainer2">
+   <div class="close">Затвори</div>
+<div class="slider2">
+   <span style="--i:0"><img src="public/images/wizard.png" alt=""></span>
+   <span style="--i:1"><img src="public/images/publ-1.png" alt=""></span>
+   <span style="--i:2"><img src="public/images/giant.png" alt=""></span>
+   <span style="--i:3"><img src="public/images/publ-1.png" alt=""></span>    
+   <span style="--i:4"><img src="public/images/witch.png" alt=""></span>
+ 
+</div>
+<span class="place2">Място за вашата реклама</span> 
+
+</div>
+
+</div>
+
     </main>
 
     
@@ -141,4 +160,16 @@
 </body>
 
 </html>  
+
+<script>
+    let closeBtn = document.querySelector('.close')
+   // if (window.matchMedia('screen and (min-width: 800px)').matches) {  //ne raboti!!!
+closeBtn.addEventListener('click', () => {
+     document.querySelector('.trainer2').style.display = 'none'
+    document.querySelector('#catches').style.filter = 'blur(0px)'
+})
+  //  }
+</script>
+
+
 
