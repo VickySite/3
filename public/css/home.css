@@ -200,6 +200,7 @@ label {
   /* !!! za slider-a koito se vurti */
   margin-top: 12%;
   margin-left: 65%;
+  animation: 2s ease-out 0s 1 slideInFromTop
 }
 .homeTrainer {
   object-fit: cover;
@@ -349,6 +350,14 @@ svg {
     transition-delay: preserve-3d;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(150px);
   }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   
   .slider2 span img {
     position: absolute;
@@ -382,6 +391,7 @@ svg {
     margin-top: 20%;
     margin-left: 20%;
     height: 200px;
+    animation: 2s ease-out 0s 1 slideInFromTop
   }
   .close {
     position: absolute;
