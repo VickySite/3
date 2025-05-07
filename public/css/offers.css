@@ -97,6 +97,9 @@
   color: #777777;
   margin-top: -1.5em;
 }
+.card__text1{
+  opacity: 0;
+}
 .card__text{
   animation: neon 4s ease infinite
 }
@@ -128,8 +131,8 @@ animation: fade-in 2s ease-in forwards;
   }
 }
 .line {
-  position: absolute;
   opacity: 0;
+  position: absolute;
   margin-top: -65%;
   height: 5px;
   width: 100px;
@@ -197,19 +200,19 @@ animation: fade-in 2s ease-in forwards;
 }
 
 .card__ribbon::after {
-  content: 'Малък сайт';
+  content: 'Безплатен сайт';
   background-color: var(--color);
 }
 .card__ribbon2::after {
-  content: 'Стандартен сайт';
+  content: 'Игри';
   background-color: var(--color2);
 }
 .card__ribbon3::after {
-  content: 'Сайт екстра плюс';
+  content: 'Приложения';
   background-color: var(--color3);
 }
 .card__ribbon4::after {
-  content: 'Безплатен сайт';
+  content: 'Сайтове';
   background-color: var(--color4);
 }
 
@@ -258,4 +261,10 @@ animation: fade-in 2s ease-in forwards;
   color: white;
   margin: 2%;
   margin-left: 35%;
+}
+.applications {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.815); 
 }
