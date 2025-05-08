@@ -1,13 +1,21 @@
 
-.text i {
+.text i, .text img {
+  position: absolute;
   border-radius: 5px;
-  margin-top: -5%;
-  margin-left: 30%;
+  margin-top: -2%;
+  height: 1.2em;
+  width: 1.2em;
   animation: pl1 1s infinite;
+}
+.text i {
+  margin-left: 15%;
+}
+.text img {
+  margin-left: 25%;
 }
   
 @keyframes pl1 {
-  100% {box-shadow: 0 0 0 20px rgba(18, 4, 94, 0.401)}
+  100% {box-shadow: 0 0 0 10px rgba(18, 4, 94, 0.401)}
 }
 
 .squareContacts {
